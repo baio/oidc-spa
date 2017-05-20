@@ -1,3 +1,8 @@
 <h1>
   {{title}}
+  <button *ngIf="!isLogin" (click)="login()"> login </button>
+  <button *ngIf="isLogin" (click)="update()"> update expired </button>
+  <button *ngIf="isLogin" (click)="showExpiresIn()"> show expires in </button>
+  <button *ngIf="isLogin" (click)="getToken()"> get token </button>
+  <button *ngIf="isLogin" (click)="logout()">  logout </button>
 </h1>
